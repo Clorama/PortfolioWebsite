@@ -1,0 +1,911 @@
+/* CSS Syntax:
+
+Selector {
+	property:value;
+	property:value;
+}
+
+*/
+/* Type Selector */
+
+/*Web Fonts */
+@import url(http://fonts.googleapis.com/css?family=Reenie+Beanie);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300, 400);
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300);
+
+
+
+
+                                            /*FIXES */
+
+.clearfix:after { 
+   content: ".";  
+   display: block; 
+   clear: both;
+   visibility: hidden;
+   height: 0; 
+   line-height: 0;
+   
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: borderbox;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+
+                                               /* GLOBAL */
+
+body 	{
+ 	background: url('images/texture.png') no-repeat center;
+
+ }
+
+ section {
+ 	padding: 3% 5%;
+ 	background: #eee;
+ 	margin: 5% 20%;
+ 	min-width: 650px;
+ }
+
+b, ul, li, h3 { 
+	font-family: 'Dosis', sans-serif;
+}
+
+p{/* selects all <p> */ 
+	font-size: 16px; /* px, pt, %, em */
+	line-height: 1.5em;
+	font-family: 'Dosis', sans-serif;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+}
+h2, h4 {
+	font-family: 'Questrial', sans-serif;
+}
+
+#logo h1 {
+	z-index: 1;
+	position: absolute;
+	margin: 0 auto;
+	/*left: 30%;*/
+	top: 65px;
+}
+
+
+
+.blackheader {
+	height:80px;
+	color: black;
+	z-index: 0;
+}
+
+
+
+.dot_text {
+	position: absolute;
+	font-size: 30px;
+	min-width: 400px;
+	font-family: 'DIDOT-HTF-L64-LIGHT', didot, sans-serif;
+	font-weight: lighter;
+	color: white;
+	text-shadow: 7px 0px 3px #Fd585c;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.dot_text1 {
+	position: absolute;
+	font-size: 30px;
+	min-width: 400px;
+	font-family: 'DIDOT-HTF-L64-LIGHT', didot, sans-serif;
+	font-weight: lighter;
+	color: white;
+	text-shadow: 7px 0px 3px turquoise;
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+
+
+}
+
+.text {
+	z-index: 2;
+	position: fixed;
+	right: 325px;
+	top: 250px;
+	color: gray;
+	font-family: zapfino;
+	font-weight: lighter;
+	margin: 10px 0px -20px;
+}
+#logo {
+	background: black;
+	font-family: 'didot';
+	max-height: 250px;
+}
+
+
+#nav_bar {
+	z-index: 1;
+	position:fixed;
+	top:0px;
+	width: 100%;
+	min-width: 500px;
+	background: url(../images/navbar.jpg) repeat-x;
+}
+
+a:hover{
+	background: #fd585c;
+}
+
+a.selected {
+	background: #fd585c;
+	color: white;
+}
+
+.circle {
+	width: 40px;
+    height: 40px;
+    border: 50% solid lime;
+    border-radius: 50%;
+    background: turquoise;
+    font-family: zapfino;
+    font-weight: bold;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	margin-right: 10px;
+ 
+}
+
+
+figcaption { /* selects all <figcaptions> */
+	/* font-size: 12px;
+	font-weight:\ normal;
+	line-height: 1.5em;
+	font-family: Georgia, "Times New Roman", Serif; */
+
+	font: normal 12px/1.5em Georgia, "Times New Roman", Serif;
+	color: #745621;
+	text-align: center;
+}
+
+footer {
+	clear: both;
+}
+                                              /* Social Icons 
+ ----------------------------------------------- */
+
+.social {
+	position: fixed;
+	top: 200px;
+	right: 3px;
+	width: 40px; 
+	z-index: 1;
+}
+
+a.fb {
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/fbicons.png) no-repeat;
+}
+a.fb { background-position: 0, 0 }
+a.fb:hover {background-position: -40px, 0 }
+a.fb:active {background-position: -80px, 0 }
+
+.social2 {
+	position: fixed;
+	top: 240px;
+	right: 3px;
+	width: 40px; 
+	z-index: 1;
+}
+a.twit {
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/twiticons.png) no-repeat;
+}
+a.twit {background-position: 0, -40px }
+a.twit:hover {background-position: -40px, -40px }
+a.twit:active {background-position: -80px, -40px }
+
+
+.social3 {
+	position: fixed;
+	top: 280px;
+	right: 3px;
+	width: 40px; 
+	z-index: 1;
+}
+a.li {display: block;
+	width: 40px;
+	height: 40px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/linkedicons.png) no-repeat;
+}
+
+a.li {background-position: 0, -80px }
+a.li:hover {background-position: -40px, -80px }
+a.li:active {background-position: -80px, -80px }
+
+
+                                     /* SECTIONS */
+
+.middle {
+	background: black;
+	border: 10px dashed white;
+	padding-top: 20px;
+	width:85%;
+	height: auto;
+}
+
+
+.textb {
+	color: black;
+	z-index: 2;
+	position: absolute;
+	top: 430px;
+	right: 150px;
+}
+
+.photo {
+	position: absolute;
+	right: -15%;
+	margin-top: 8px;
+	margin-left: 15px;
+	min-width: 100%;
+	min-height: auto;
+}
+
+ #page-wrap {
+	width: 800px;
+     margin: 0 auto;
+
+ }
+
+/********** INDEX PAGE **************/
+
+.passions {
+	color: black;
+	z-index: 2;
+	position: absolute;
+	top: 430px;
+	right: 150px;
+}
+.news {
+	color: black;
+	z-index: 2;
+	position: absolute;
+	top: 630px;
+	right: 150px;
+}
+
+.border {
+    background: rgba(255, 255, 255, 0.5);
+    border: 10px dashed #F0F;
+    height: 200px;
+    width: 350px;
+    padding: 10px 0px 5px 15px;
+    overflow: scroll;
+}
+.workethic {
+	position: absolute;
+	right: 15%;
+	top: 30%;
+}
+.dropitdownlow {
+	position: absolute;
+	bottom: -200px;
+}
+
+
+                              /****** ABOUT ME PAGE ********/
+
+.textme p{
+text-align: left;
+
+}
+
+
+.whitestripe {
+	background: white;
+	height: 40px;
+}
+
+.container {
+	background: turquoise;
+	border: 10px dashed white;
+	height: 800px;
+	width: 90%;
+	min-width: 1100px;
+	margin: 120px 60px;
+}
+
+.container > .wrapper {
+	padding: 30px 0px;
+}
+
+/*.headshot {
+	position: relative;
+	width: 40%;
+	margin: 0px 5%;
+	float: left;
+} */
+
+.headshot img {
+	width: 70%;
+}
+
+
+.borderbox {
+	box-sizing: borderbox;
+	background: white;
+	border: 10px dashed #Fd585c;
+	margin: 5px 50px 0 0;
+	padding: 15px 15px;
+	width: 445px;
+}
+
+.position {
+	position: relative;
+	width: 40%;
+	margin-left: 5%;
+	top: 0px !important;
+	float: left;
+
+}
+
+
+.fix {
+	z-index: 3
+	position: fixed;
+	margin: 0 auto;
+}
+
+.box {
+	background: white;
+	width: 70%;
+	height: 3000px;
+	margin: 0 auto 0 50px;
+	overflow: scroll;
+	float: right;
+}
+
+.resume {
+	margin-left: 35%;
+}
+
+                                         /* MY ART PAGE */
+
+
+.scroll {
+	box-sizing:borderbox;
+	position: absolute;
+	right: -20px;
+	padding: 20px;
+	height: 2000px;
+	background: white;
+	/*border: 10px dashed #Fd585c; */
+	overflow: scroll;
+}
+
+
+.block {
+	display: block;
+	float: left;
+	margin: 20px 100px;
+	width: 150px;
+}
+
+.block2 {
+	display: inline-block;
+	position: absolute;
+	margin: 20px auto;
+	width: 150px;
+}
+.float {
+	float: right;
+	width: 60%;
+	min-width: 650px;
+	margin: 20px 100px;
+}
+
+.clearfix2 {
+	clear:both;
+}
+
+.list_text {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 24px;
+	color: black;
+	
+}
+
+.list_textw {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 24px;
+	color: white;
+	
+}
+
+
+.sidebar {
+	float:left;
+	box-sizing: borderbox;
+	background: turquoise;
+	border: 5px dashed white;
+	border-radius: 43%;
+	width: 150px;
+	height:150px;
+	padding: 100px;
+	/* width and height can be anything, as long as they're equal */
+}
+.sidebar1 {
+	float:left;
+	box-sizing: borderbox;
+	background: white;
+	border: 5px dashed black;
+	border-radius: 43%;
+	width: 150px;
+	height:150px;
+	padding: 25px 50px 50px;
+	/* width and height can be anything, as long as they're equal */
+}
+.nav_bar {
+	margin-top: -20px;
+	}
+
+
+
+
+                              /****** Interaction Design/Smart One ********/
+
+.wrapper2 {
+   max-width: 960px;
+   min-width: 480px;
+   margin: 0px auto;
+   background-color: #eee;
+   opacity:0.6;
+   z-index: -3;
+   position: fixed;
+}
+
+#container {
+   max-width: 600px;
+   min-width: 580px;
+   min-height: auto;
+   margin: 7% auto;
+   z-index: -3;
+ 
+   padding: 10%;
+
+}
+
+.topmargin {
+	margin-top: 350px;
+	max-width: 100%;
+}
+
+.bullet-margin ol{
+	margin-left: 25%;
+}
+
+
+.block3 {
+	display: inline;
+	position: absolute;
+	 margin: 20px auto auto 3%;
+	/* width: 150px; */
+}
+
+.groupa {
+	float: left;
+	margin: 20px 20px;
+}
+
+.groupb {
+	float: left;
+	margin: 20px 20px 20px 0px;
+}
+
+.groupc {
+	float: left;
+	margin: 20px 20px 20px 0px;
+}
+
+.video {
+	float: left; 
+	padding: 0%;
+	margin-bottom: 5%;
+
+clear:both;
+	
+}
+
+.smartone { 
+	/*float: left; */
+  margin: 0 auto;
+  overflow: visible;
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+                                          /* WORK */
+
+.block2 {
+	display: inline-block;
+	position: absolute;
+	margin: 20px auto;
+	width: 150px;
+}
+
+.float {
+	float: right;
+	width: 60%;
+	min-width: 650px;
+	margin: 20px 100px;
+}
+
+.clearfix2 {
+	clear:both;
+}
+
+.list_text1 {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 24px;
+	color: black;
+	
+}
+
+.list_textw2 {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 24px;
+	color: white;
+	
+}
+
+
+.sidebar2 {
+	float:left;
+	box-sizing: borderbox;
+	background: turquoise;
+	border: 5px dashed white;
+	border-radius: 50%;
+	width: 150px;
+	height:150px;
+	padding: 100px;
+	/* width and height can be anything, as long as they're equal */
+}
+.sidebar3 {
+	float:left;
+	box-sizing: borderbox;
+	background: white;
+	border: 5px solid white;
+	border-radius: 50%;
+	width: 150px;
+	height:150px;
+	padding: 25px 50px 50px;
+	/* width and height can be anything, as long as they're equal */
+}
+
+
+
+
+
+
+
+
+                                          /* PROJECTS */
+
+
+   .textw {
+	color: white;
+}
+
+.midplusproj {
+	background: turquoise;
+	width: 85%;
+	border: 10px dashed white;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	padding: 10px 100px;
+	overflow: scroll;
+
+}
+
+.midplusproj div:hover {
+	background: white;
+	color: #Fd585c;
+	font-size: 20px;
+	padding: 20px;
+}
+
+.blackheader2 {
+	height: 120px;
+	background: black;
+	z-index: 0;
+}
+
+
+                                              /*BLOG PAGE */
+
+.clear {
+	clear:both;
+}
+
+.pos {
+
+	position: absolute;
+	left: 5%;
+	right:5%;
+	margin-top: -100px;
+		}
+
+.middleblog {
+	box-sizing: borderbox;
+	border: 10px dashed white;
+	width: 90%;
+	height: auto;
+	margin: 150px auto 20px;
+	padding: 20px 0;
+	background: #Fd585c;
+}
+
+.borderblog {
+    background: rgba(255, 255, 255, 0.5);
+    border: 10px dashed #F0F;
+    height: 400px;
+    width: 350px;
+    padding: 10px 0px 5px 15px;
+    overflow: scroll;
+}
+
+.borderblog li {
+	text-indent: 2em;
+}
+
+.borderblog li a{
+	text-decoration: none;
+}
+
+ul {
+list-style-position:inside;
+} 
+
+.pos2 {
+
+	position: relative;
+	left: 190px;
+	top: 320px;
+	text-align: left;
+}
+/* //////////////////////////////////CONTACTS PAGE */
+
+.contactform {
+	margin-top: 35px;
+}
+
+.contactform_success img{
+	margin-top: 35px;
+	height: 400px;
+	width: 346px;
+}
+
+.contact_text {
+	float: right;
+	margin-left: 10px;
+	
+	text-align: center;
+	width: 400px;
+	clear: both;
+}
+
+.contact_text_success {
+	float: right;
+	margin-top: -450px;
+	text-align: center;
+	width: 400px;
+	clear: both;
+
+}
+
+.social_links {
+	position: relative;
+	top: -550px;
+	left: 200px;
+	width: 300;
+	height: 32px;
+
+}
+
+.social_links2 {
+	position: relative;
+	top: -575px;
+	left: 200px;
+	width: 300;
+	height: 32px;
+
+}
+
+a.fbcontact {
+	display: inline-block;
+	height: 32px;
+	width: 35px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/icons/fbicons.png) no-repeat;
+	margin-right: 10px;
+}
+
+a.fbcontact:hover {background-position: 0 -32px;}
+
+a.twcontact{
+	display: inline-block;
+	height: 32px;
+	width: 35px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/icons/twicons.png) no-repeat;
+	margin-right: 10px;
+}
+
+a.twcontact:hover {background-position: 0px -32px;}
+
+a.igcontact {
+	display: inline-block;
+	height: 32px;
+	width: 35px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/icons/igicons.png) no-repeat;
+	margin-right: 10px;
+}
+
+a.igcontact:hover {background-position: 0px -32px;}
+
+a.tcontact {
+	display: inline-block;
+	height: 32px;
+	width: 35px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/icons/ticons.png) no-repeat;
+	margin-right: 10px;
+}
+
+a.tcontact:hover {background-position: 0px -32px;}
+
+a.linkcontact {
+	display: inline-block;
+	height: 32px;
+	width: 35px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(../images/icons/liicons.png) no-repeat;
+	margin-right: 10px;
+}
+
+a.linkcontact:hover {background-position: 0px -32px;}
+
+input{
+	display: block;
+	width: 100%;
+	margin-bottom: 7px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;
+	height: 50px;
+}
+
+textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 7px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;
+
+}
+
+input.verifybox {
+	display: inline-block;
+	width: 60%;
+	margin-bottom: 7px;
+	margin-right: 5px;
+	box-shadow: 0 3px 5px #ccc;
+	border: 1px solid #ccc;
+	height: 40px;
+
+}
+img.verifyimg {
+	height: 40px;
+	width: 40px;
+	vertical-align: bottom;
+
+}
+
+input[type="submit"] {
+	margin-top: 10px;
+	width: 100px;
+	background: #ccc;
+	color: white;
+	border-radius: 25px;
+	border: 1px solid white;
+	height: 30px;
+
+}
+
+.contact{
+	display: block;
+	float: left;
+	max-height: 10px;
+	margin-bottom: 5px;
+	box-shadow: 0 3px 5px #ccc
+}
+
+.midplus {
+	background: turquoise;
+	border: 10px dashed white;
+	margin-top: 10px;
+	width: 925px;
+	min-width: 700px;
+	height: 525px;
+	clear: both;
+
+}
+
+.midplus2 {
+	background: turquoise;
+	border: 10px dashed white;
+	margin-top: 120px;
+	width: 925px;
+	min-width: 700px;
+	height: 525px;
+	clear: both;
+
+}
+.textcon {
+	text-align: left;
+	padding: 20px 50px;
+	margin-bottom: 100px;
+
+}
+
+.backdrop {
+	position: relative;
+	top: 700px;
+	height: 800px;
+	width: 100%;
+	margin-bottom: 50px;
+
+
+}
+

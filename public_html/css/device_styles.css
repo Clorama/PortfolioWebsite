@@ -1,0 +1,233 @@
+/**
+ * Learn HTML & CSS from Scratch
+ * 4.1: Responsive Layouts
+ */
+
+/********** Device Styles **********/
+
+/**
+ * Tablet Landscape: 1024px
+ */
+
+  @media only screen and (max-width: 1920px) and (min-width: 1441px) {
+
+  	.headshot img{
+  		height: 680px;
+  		width: auto;
+  		overflow: hidden;
+  	}
+  	.borderbox {
+  		height: 680px;
+  	}
+	
+	.workethic {
+		position: absolute;
+		bottom: 0px;
+	}
+
+
+  }
+
+ @media only screen and (max-width: 1440px) {
+
+
+.position {
+	top: -700px;
+}
+
+.borderbox {
+	margin: 5px -60px 0 0;
+	width: 500px;
+}
+
+ }
+
+@media only screen and (max-width: 1024px) {
+
+.borderblog {
+
+	border: 5px dashed magenta;
+	height: 300px;
+	width: 290px;
+	padding: 5px 0 5px 5px;
+	}
+
+.pos2 {
+
+	position: relative;
+	left: 150px;
+	top: 280px;
+	text-align: left;
+}
+
+.headshot {
+	position: relative;
+	margin-left: 3%;
+
+}
+
+.position {
+	position: relative;
+	margin-right: 18%;
+}
+	
+.borderbox {
+	margin-top: 75px;
+	width: 45%;
+	height: 725px;
+}
+
+.float {
+	min-width: 500px;
+}
+
+.block {
+	width: 100px;
+	margin-left: 50px;
+}
+
+.photo {
+	margin-top: 10px;
+}
+
+}
+
+/**
+ * Tablet Portrait: 768px
+ */
+
+@media only screen and (max-width: 768px) {
+
+.borderblog {
+
+	border: 5px dashed magenta;
+	height: 300px;
+	width: 240px;
+	padding: 5px 0 5px 5px;
+	}
+
+.pos2 {
+
+	position: relative;
+	left: 150px;
+	top: 240px;
+	text-align: left;
+}
+
+.container {
+	width: 95%;
+	margin: 15% 2.5%;
+}
+
+.headshot {
+	position: relative;
+	margin-left: 10%;
+	width: 50%;
+
+}
+
+.position {
+	position: relative;
+	margin-right: 38%;
+}
+	
+.borderbox {
+	margin-top: 210px;
+	width: 350px;
+	height: 680px;
+	padding: 5px;
+}
+
+
+.float {
+	min-width: 500px;
+	margin-left: 5px;
+}
+
+.sidebar {
+	border: 2px dashed white;
+	width: 100px;
+	height: 100px;
+	padding: 50px;
+	/* width and height can be anything, as long as they're equal */
+}
+.sidebar1 {
+	border: 2px dashed black;
+	width: 100px;
+	height: 100px;
+	padding: 25px 50px 50px;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.block {
+	width: 30px;
+	margin-left: 15px;
+}
+
+.photo {
+	margin-top: 10px;
+}
+
+.resume {
+	position: relative;
+	left: -360px;
+	bottom: 230px;
+}
+
+
+}
+
+}
+/**
+ * Smartphone Landscape: 480px
+ */
+
+@media only screen and (max-width: 480px) {
+
+
+}
+/**
+ * Smartphone Portrait: 320px
+ */
+
+@media only screen and (max-width: 320px) {
+
+
+}
+/**
+ * Printer
+ */
+
+@media print {
+
+}
+
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media screen and (device-width: 360px)  and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+
+  .workethic {
+		position: absolute;
+		top: 300px;
+		bottom: 25px;
+	}
+
+}
+
+/* Landscape */
+@media screen  and (device-width: 360px)  and (device-height: 640px)  and (-webkit-device-pixel-ratio: 3)  and (orientation: landscape) {
+
+  	.workethic {
+		position: absolute;
+		bottom: 10%;
+		
+	}
+
+}
